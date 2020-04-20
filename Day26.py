@@ -1,11 +1,23 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-late = input().strip().split(" ")
-normal = input().strip().split(" ")
-if int(late[2])>int(normal[2]):
-    print(10000)
-elif int(late[1]) > int(normal[1]):
-    print(500*(int(late[1])-int(normal[1])))
-elif int(late[0]) > int(normal[0]):
-    print(15*(int(late[0])-int(normal[0])))
+a,b,c=input().split()
+p,q,r=input().split()
+a=int(a)
+b=int(b)
+c=int(c)
+p=int(p)
+q=int(q)
+r=int(r)
+if c!=r and c>r:
+    print('10000')
+#    exit()
+elif b!=q and b>q and c>=r:
+    x=(b-q)
+    fine=x*500
+    print(fine)
+    #   break
+elif a!=p and a>p and  c>=r:
+    x=(a-p)
+    fine=x*15
+    print(fine)
+    #break
 else:
-    print(0)
+    print('0')
